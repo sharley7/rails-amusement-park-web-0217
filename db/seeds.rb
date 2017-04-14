@@ -69,5 +69,3 @@ def make_attractions_and_rides
     new_attraction.save
   end
 end
-
-main

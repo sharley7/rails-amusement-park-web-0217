@@ -47,6 +47,7 @@ group :test, :development do
   gem "sqlite3"
   gem "pry"
   gem "rack_session_access"
+
 end
 
 group :production do
@@ -56,3 +57,4 @@ group :production do
 end
 
 gem "bootstrap-sass", "~> 3.1.1"
+gem 'byebug', '~> 9.0', '>= 9.0.6'

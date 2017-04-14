@@ -1,0 +1,28 @@
+<% if @current_user.admin == false %>
+<ul>
+<% @attractions.each do | attraction | %>
+<li>
+  Name: <%= attraction.name %>
+</li>
+<li>
+  Tickets: <%= attraction.tickets %>
+</li>
+<li>
+<%= link_to "Go on #{attraction.name}", attraction_path(attraction) %></li>
+<% end %>
+</ul>
+<% else %>
+<ul>
+<% @attractions.each do | attraction | %>
+<li>
+  Name: <%= attraction.name %>
+</li>
+<li>
+  Tickets: <%= attraction.tickets %>
+</li>
+<li>
+<%= link_to "Show #{attraction.name}", attraction_path(attraction) %></li>
+<% end %>
+</ul>
+<%= link_to "New Attraction", new_attraction_path %>
+<% end %>

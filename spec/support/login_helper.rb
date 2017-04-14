@@ -58,6 +58,7 @@ module LoginHelper
       name: "Walt Disney",
       password: "password",
       happiness: 3,
+      height: 50,
       nausea: 2,
       tickets: 10,
       admin: true
